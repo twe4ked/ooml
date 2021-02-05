@@ -1,0 +1,13 @@
+[package]
+name = "ooml"
+version = "0.1.0"
+authors = ["Odin Dutton <odindutton@gmail.com>"]
+edition = "2018"
+description = "Odin's obviouser markup language"
+
+[dependencies]
+thiserror = "1.0.23" # TODO
+nom = "6.1.0"
+
+[dev-dependencies]
+indoc = "1.0.3"
