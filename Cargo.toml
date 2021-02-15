@@ -8,6 +8,7 @@ description = "Odin's obviouser markup language"
 [dependencies]
 thiserror = "1.0.23" # TODO
 nom = "6.1.0"
+nom-indent = { git = "https://github.com/monomadic/nom-indent" }
 
 [dev-dependencies]
 indoc = "1.0.3"

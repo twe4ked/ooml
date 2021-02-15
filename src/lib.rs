@@ -82,6 +82,10 @@ fn collection<'a>(input: &'a str) -> IResult<&str, Value<'a>> {
 }
 
 pub fn parse<'a>(input: &'a str) -> IResult<&str, Value<'a>> {
+    let (_, lines) = nom_indent::indent(input, "<assertion>").expect("input failed to parse");
+
+    dbg!(lines);
+
     terminated(collection, preceded(opt(newline), eof))(&input)
 }
 
